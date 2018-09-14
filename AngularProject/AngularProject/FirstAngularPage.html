@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>First AngularJS Application</title>
+	<meta charset="utf-8" />
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/MyAngularScript.js"></script>
+</head>
+<body ng-app="myApp">
+    Enter Number to Multiply:
+    <input type="text" ng-model="num1" /> X <input type="text" ng-model="num2" /> 
+    = <span> {{ num1 * num2 }}</span>
+
+    <div ng-controller="myController">
+        Message from Controller: {{ message }}
+        <div>
+            <button ng-click="DisplayMessage()">Click me</button>
+        </div>
+        <div>
+            <input type="text" id="txtSearch" 
+        </div>
+    </div>
+    
+</body>
+</html>
